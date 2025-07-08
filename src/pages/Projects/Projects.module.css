@@ -1,4 +1,4 @@
-.projects{
+/* .projects{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
     width:80%;
@@ -12,4 +12,41 @@
     margin: 1rem;
     font-size: large;
     font-weight: bolder;
+} */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 90%;
+  max-width: 1000px;
+  margin: 6rem auto;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.project {
+  background-color: #e2dcdcc4;
+  border: 2px solid transparent;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.project a {
+  text-decoration: none;
+  color: #5a189a;
+  transition: color 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.project a:hover {
+  color: #9d4edd;
 }
