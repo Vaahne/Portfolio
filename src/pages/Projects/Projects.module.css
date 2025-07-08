@@ -50,3 +50,16 @@
 .project a:hover {
   color: #9d4edd;
 }
+
+.img{
+  width: 100%;
+  height: auto;
+  margin-top:1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.img:hover{
+  transform: scale(4);
+}
