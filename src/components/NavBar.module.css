@@ -1,0 +1,23 @@
+.nav>ul{
+    background: linear-gradient(135deg, #303133, #a9b5d7);
+    width: 100vw;
+    /* height: 3rem; */
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: .75rem 2rem;
+    text-align: center;
+    margin: 0;
+    top:0;
+    left:0;
+    color: rgb(51, 36, 9);
+    font-size: x-large;
+    font-weight: bolder;
+    position: fixed;
+}
+.nav{
+    background-color: rgb(32, 32, 32);
+    padding: 0  ;
+    top:0;
+}
+

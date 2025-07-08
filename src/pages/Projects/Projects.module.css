@@ -1,0 +1,15 @@
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    width:80%;
+    margin: 7rem auto;
+    gap: 1.5;   
+}
+.project{
+    padding: 2rem;
+    border-radius: 2rem;
+    border: .2rem solid wheat;
+    margin: 1rem;
+    font-size: large;
+    font-weight: bolder;
+}
