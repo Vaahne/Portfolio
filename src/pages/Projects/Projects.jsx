@@ -18,6 +18,9 @@ export default function Projects(){
         <div className={styles.project}>
             <a href={import.meta.env.VITE_WEATHER} target="_blank">Weather API</a>
         </div>
+         <div className={styles.project}>
+            <a href={import.meta.env.VITE_EXTERNALAPI} target="_blank">External API</a>
+        </div>
     </div>
     </>
 }
