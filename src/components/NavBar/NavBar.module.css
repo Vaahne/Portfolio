@@ -1,9 +1,10 @@
 .nav>ul{
-    background: linear-gradient(135deg, #303133, #a9b5d7);
-    width: 100vw;
-    /* height: 3rem; */
+     background-color: #1e1e2f;
+    width: 200px;
+    height: 100vh;
     list-style-type: none;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     padding: .75rem 2rem;
     text-align: center;
@@ -14,6 +15,7 @@
     font-size: x-large;
     font-weight: bolder;
     position: fixed;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
 }
 .nav{
     background-color: rgb(32, 32, 32);

@@ -1,0 +1,125 @@
+.skills {
+  padding: 2rem;
+  background-color: #f9f9fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  max-width: 800px;
+  margin: auto;
+}
+
+.prog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillItem {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
+}
+
+.skillItem label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+.progressbar {
+  height: 24px;
+  border-radius: 6px;
+  padding-right: 0.5rem;
+  line-height: 24px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  transition: width 0.3s ease;
+}
+
+/* Individual skill bars */
+.html {
+  background: linear-gradient(to right, cyan 90%, #ccc 10%);
+}
+.css {
+  background: linear-gradient(to right, teal 80%, #ccc 20%);
+}
+.js {
+  background: linear-gradient(to right, green 80%, #ccc 20%);
+}
+.mysql {
+  background: linear-gradient(to right, orange 80%, #ccc 20%);
+}
+.react {
+  background: linear-gradient(to right, purple 80%, #ccc 20%);
+}
+.mongodb {
+  background: linear-gradient(to right, gold 70%, #ccc 30%);
+}
+.devops{
+    background: linear-gradient(to right,indigo 70%,grey 30%);
+}
+.java{
+    background: linear-gradient(to right,red 80%,grey 30%);
+}
+.node{
+    background: linear-gradient(to right,violet 80%,grey 20%);
+}  
+.express{
+    background: linear-gradient(to right,maroon 80%,grey 20%);
+}
+
+
+/* .skills{
+    padding:2rem;
+    border-radius: 2rem;
+    max-width: 600px;
+    box-shadow: 1px 4px 12px rgba(0,0,0,0.08);
+    margin: auto;
+}
+.prog{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    /* grid-template-columns: (2,1fr);
+    gap: 1.5rem;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.skillItem {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
+}
+.progressbar{
+    width:80%;
+    color:white;
+    text-align:right;
+    margin: 3% 1px;
+}
+.html{
+    background: linear-gradient(to right,cyan 90%,grey 10%);
+}
+.css{
+    background: linear-gradient(to right,rgb(19, 151, 151) 80%,grey 20%);
+}
+.js{
+    background: linear-gradient(to right,green 80%,grey 20%);
+}
+.mysql{
+    background: linear-gradient(to right,orange 60%,grey 40%);
+}
+.react{
+    background: linear-gradient(to right,purple 80%,grey 20%);
+}
+.mongodb{
+    background: linear-gradient(to right,yellow 70%,grey 30%);
+}
+.devops{
+    background: linear-gradient(to right,indigo 70%,grey 30%);
+}
+.java{
+    background: linear-gradient(to right,red 80%,grey 30%);
+}  */
