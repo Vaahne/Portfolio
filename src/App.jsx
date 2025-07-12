@@ -4,9 +4,9 @@ import { NavBar } from './components/NavBar/NavBar'
 import About from './pages/About/About'
 import Projects from './pages/Projects/Projects'
 import Contact from './pages/Contact/Contact'
-import Experience from './pages/Projects/Experience/Experience'
-import Education from './pages/Projects/Education/Education'
-import Skills from './pages/Projects/Skills/Skills'
+import Experience from './pages/Experience/Experience'
+import Education from './pages/Education/Education'
+import Skills from './pages/Skills/Skills'
 
 function App() {
 

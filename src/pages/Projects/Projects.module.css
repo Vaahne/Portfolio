@@ -1,23 +1,9 @@
-/* .projects{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
-    width:80%;
-    margin: 7rem auto;
-    gap: 1.5;   
-}
-.project{
-    padding: 2rem;
-    border-radius: 2rem;
-    border: .2rem solid wheat;
-    margin: 1rem;
-    font-size: large;
-    font-weight: bolder;
-} */
-
 .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  width: 90%;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   max-width: 1000px;
   margin: 6rem auto;
   gap: 2rem;
@@ -25,6 +11,7 @@
 }
 
 .project {
+  display: flex;
   background-color: #e2dcdcc4;
   border: 2px solid transparent;
   border-radius: 1.5rem;
@@ -35,11 +22,24 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
 }
+.projectDetails{
+  display: flex;
+  flex-direction: column;
+}
 
 .project a {
   text-decoration: none;
   color: #5a189a;
   transition: color 0.3s ease;
+}
+.title a{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+.title a:hover{
+  color: #00bcd4;
 }
 
 .project:hover {
@@ -54,12 +54,35 @@
 .img{
   width: 100%;
   height: auto;
-  margin-top:1rem;
-  border-radius: 1rem;
+  margin-top:1rem 0;
+  padding: .4rem;
+  border-radius: .4rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .img:hover{
-  transform: scale(2);
+  transform: scale(1.1);
+}
+.techList{
+  display: flex;
+  flex-wrap: wrap;
+  gap:.5rem;
+  justify-content: center;
+}
+.desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+.summary{
+  font-size: .9rem;
+  /* padding: .2rem; */
+  margin: .2rem 0 1rem;
+}
+@media (max-width:768px) {
+ .projects {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+ }
 }

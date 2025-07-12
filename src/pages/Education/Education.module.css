@@ -33,3 +33,7 @@
   color: #555;
   line-height: 1.6;
 }
+h3 {
+    display: flex;
+    justify-content: space-between;
+}

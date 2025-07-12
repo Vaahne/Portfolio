@@ -70,6 +70,13 @@
 .express{
     background: linear-gradient(to right,maroon 80%,grey 20%);
 }
+.selenium{
+    background: linear-gradient(to right,rgb(114, 42, 165) 80%,grey 20%);
+}
+.python{
+    background: linear-gradient(to right,rgb(106, 156, 52) 80%,grey 20%);
+}
+
 
 
 /* .skills{

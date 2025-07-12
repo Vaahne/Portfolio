@@ -37,6 +37,10 @@ export default function Skills(){
                         <div className={`${styles.progressbar} ${styles.devops}`}>70%</div>
                     </li>
                     <li className={styles.skillItem}>
+                        <label>Python</label>
+                        <div className={`${styles.progressbar} ${styles.python}`}>80%</div>
+                    </li>
+                    <li className={styles.skillItem}>
                         <label>MONGODB</label>
                         <div className={`${styles.progressbar} ${styles.mongodb}`}>70%</div>
                     </li>
@@ -44,6 +48,11 @@ export default function Skills(){
                         <label>MySQL</label>
                         <div className={`${styles.progressbar} ${styles.mysql}`}>80%</div>
                     </li>
+                    <li className={styles.skillItem}>
+                        <label>Selenium</label>
+                        <div className={`${styles.progressbar} ${styles.selenium}`}>80%</div>
+                    </li>                    
+ 
                 </ul>
         </div>
     </>
