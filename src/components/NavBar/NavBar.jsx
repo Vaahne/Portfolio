@@ -8,6 +8,7 @@ export function NavBar(){
             <li><Link to="/projects" title='Projects'>PROJECTS</Link></li>
             <li><Link to="/experience" title='Experience'>EXPERIENCE</Link></li>
             <li><Link to="/education" title='Education'>EDUCATION</Link></li>
+            <li><Link to="/certificates" title='Education'>CERTIFICATIONS</Link></li>
             <li><Link to="/skills" title='Skills'>SKILLS</Link></li>
             <li><Link to="/contact" title="Contact">CONTACT</Link></li>
         </ul>

@@ -43,22 +43,23 @@ export default function Projects(){
                     <h4 className={styles.title}>
                         <a href={import.meta.env[key]} target="_blank">{value}</a>
                     </h4>
-                    {/* <h4 style={{textAlign:'center'}}>{value}</h4> */}
                     <p className={styles.summary}>{summaries[i]}</p>
                     <div className={styles.links}>
                         <a href={import.meta.env[key]} target="_blank" className={styles.link}>Live Demo</a>
                         <a href={import.meta.env[`${key}_GITHUB`]} target="_blank" className={styles.link}>View Code</a>
                     </div>
                 </div>
-                <a href={import.meta.env[key]} target="_blank">
-                    <img className={styles.img} src={images[i]} alt={value}/>
-                </a>
-                <p className={styles.desc}>Technologies : </p>
-                    <div className={styles.techList}>
-                        {description[i].split(",").map((tech, index) => (
-                            <span key={index} className={styles.techTag}>{tech.trim()}</span>
-                        ))}
-                    </div>
+                <div className={styles.imgDesc}>
+                    <a href={import.meta.env[key]} target="_blank">
+                        <img className={styles.img} src={images[i]} alt={value}/>
+                    </a>
+                    {/* <p className={styles.desc}>Tech Stack: </p> */}
+                        <div className={styles.techList}>
+                            {description[i].split(",").map((tech, index) => (
+                                <span key={index} className={styles.techTag}> {tech.trim()}</span>
+                            ))}
+                        </div>
+                </div>
             </div>
         })}
     </div>

@@ -4,7 +4,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   max-width: 800px;
-  margin: auto;
+  margin: 2rem auto;
 }
 
 .prog {
@@ -76,57 +76,3 @@
 .python{
     background: linear-gradient(to right,rgb(106, 156, 52) 80%,grey 20%);
 }
-
-
-
-/* .skills{
-    padding:2rem;
-    border-radius: 2rem;
-    max-width: 600px;
-    box-shadow: 1px 4px 12px rgba(0,0,0,0.08);
-    margin: auto;
-}
-.prog{
-    display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-    /* grid-template-columns: (2,1fr);
-    gap: 1.5rem;
-    list-style: none;
-    margin:0;
-    padding:0;
-}
-.skillItem {
-  display: grid;
-  grid-template-rows: auto auto;
-  gap: 0.5rem;
-}
-.progressbar{
-    width:80%;
-    color:white;
-    text-align:right;
-    margin: 3% 1px;
-}
-.html{
-    background: linear-gradient(to right,cyan 90%,grey 10%);
-}
-.css{
-    background: linear-gradient(to right,rgb(19, 151, 151) 80%,grey 20%);
-}
-.js{
-    background: linear-gradient(to right,green 80%,grey 20%);
-}
-.mysql{
-    background: linear-gradient(to right,orange 60%,grey 40%);
-}
-.react{
-    background: linear-gradient(to right,purple 80%,grey 20%);
-}
-.mongodb{
-    background: linear-gradient(to right,yellow 70%,grey 30%);
-}
-.devops{
-    background: linear-gradient(to right,indigo 70%,grey 30%);
-}
-.java{
-    background: linear-gradient(to right,red 80%,grey 30%);
-}  */

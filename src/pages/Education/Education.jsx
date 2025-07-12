@@ -3,6 +3,7 @@ import styles from './Education.module.css'
 export default function Education(){
     return <>
         <div className={styles.education}>
+            <h3>EDUCATION</h3>
             <div>
                 <h3>Per Scholas <span>2025</span></h3>
                 <p >Software Development</p>

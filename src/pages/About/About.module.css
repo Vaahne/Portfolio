@@ -1,8 +1,9 @@
 .aboutContainer {
   display: flex;
-    justify-content: center;
+  justify-content: center;
   padding: 2rem;
   background-color: #f9f9fc;
+  margin: 1rem auto;
 }
 
 .about {
@@ -93,6 +94,7 @@
 /* Responsive layout */
 @media (min-width: 768px) {
   .about {
+    margin-left: 200px;
     flex-direction: row;
     align-items: flex-start;
   }

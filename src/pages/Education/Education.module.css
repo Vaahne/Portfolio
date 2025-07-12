@@ -6,13 +6,20 @@
   background-color: #f9f9fc;
   border-radius: 12px;
   max-width: 800px;
-  margin: auto;
+  margin: 3rem auto;
+}
+.education h3{
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
 }
 
 .education > div {
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 10px;
+  border-left: 4px solid #00bcd4;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
 }

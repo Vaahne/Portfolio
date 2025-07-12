@@ -10,7 +10,7 @@ html,body{
 }
 
 .mainContent{
-    margin-top: 80px;
+    margin-top: 1rem;
     background-color: linear-gradient(135deg, #5f0a3e, #ca66c5);
 }
 

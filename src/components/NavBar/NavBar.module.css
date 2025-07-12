@@ -1,6 +1,6 @@
 .nav>ul{
-     background-color: #1e1e2f;
-    width: 200px;
+    background-color: #1e1e2f;
+    /* width: 200px; */
     height: 100vh;
     list-style-type: none;
     display: flex;
@@ -21,5 +21,28 @@
     background-color: rgb(32, 32, 32);
     padding: 0  ;
     top:0;
+}
+
+@media (max-width: 700px) {
+  .nav > ul {
+    position: static;
+    width: 100vw;
+    position: fixed;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+    font-size: medium;
+    box-shadow: none;
+  }
+
+  .nav {
+    background-color: #1e1e2f;
+    width: 100%;
+  }
+
+  .nav > ul li {
+    margin: 0 0.5rem;
+  }
 }
 

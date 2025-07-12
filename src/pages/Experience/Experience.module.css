@@ -1,6 +1,6 @@
 .experience{
     margin:auto;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #f9f9fc;
     border-radius: 12px;
     max-width: 800px;
@@ -41,3 +41,9 @@ h4{
     display: flex;
     justify-content: space-between;
 }
+
+/* @media (max-width:760px){
+  .experience{
+    margin-left:200px;
+  }
+} */
