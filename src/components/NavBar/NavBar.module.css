@@ -1,6 +1,5 @@
 .nav>ul{
     background-color: #1e1e2f;
-    /* width: 200px; */
     height: 100vh;
     list-style-type: none;
     display: flex;
@@ -29,6 +28,7 @@
     width: 100vw;
     position: fixed;
     height: auto;
+    display:flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 1rem;
