@@ -6,13 +6,15 @@ export default function Education(){
             <h3>EDUCATION</h3>
             <div>
                 <h3>Per Scholas <span>2025</span></h3>
-                <p >Software Development</p>
-                <p>Learning MERN Stack Software Developement course which includes : Html , Css , Javascript, React , Express, Node.js , MongoDb</p>
+                <strong>Software Development Program</strong>
+                <p>Learning full-stack web development with a focus on front-end and back-end technologies including HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB. Emphasis on real-world projects, teamwork, and industry best practices.</p>
+
             </div>
             <div>
-                <h3>GMRIT <span>2007-2011</span></h3>
-                <p>Bachelor Degree</p>
-                <p>Bachelor’s degree in Computer Science with a strong foundation in programming, data structures, algorithms, databases, and software development. </p>
+                <h3>GMRIT <span>2007–2011</span></h3>
+                <strong>Bachelor’s Degree in Computer Science and Engineering</strong>
+                <p>  Built a strong foundation in programming, data structures, algorithms, databases, object-oriented design, and software engineering principles. Gained hands-on experience with Java, SQL, and software development methodologies through academic projects and labs.</p>
+
             </div>
         </div>
      </>

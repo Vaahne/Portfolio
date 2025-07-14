@@ -9,20 +9,20 @@ export default function About(){
                 <div className={styles.profileSection}>
                     <img className={styles.profilePic} src={profilePic} alt="Profile Pic"/>
                         <div className={styles.details}>
-                        <div className={`${styles.box}`}>
-                            <p><strong>Name:</strong>Durga Pushadapu</p>
-                            <p><strong>Location:</strong>Denver,Colorado</p>
-                            <p><strong>Email:</strong>durga.pushadapu3@gmail.com  </p>
-                            <p className={styles.iconParent}>
-                                <a href={import.meta.env.VITE_LINKEDIN} target="_blank" >
-                                    <FaLinkedin className={styles.icon}/>
-                                </a>
-                                <a href={import.meta.env.VITE_GITHUB} target="_blank">
-                                    <FaGithub className={styles.icon}/>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
+                            <div className={`${styles.box}`}>
+                                <p><strong>Name:</strong>Durga Pushadapu</p>
+                                <p><strong>Location:</strong>Denver,Colorado</p>
+                                <p><strong>Email:</strong>durga.pushadapu3@gmail.com  </p>
+                                <p className={styles.iconParent}>
+                                    <a href={import.meta.env.VITE_LINKEDIN} target="_blank" >
+                                        <FaLinkedin className={styles.icon}/>
+                                    </a>
+                                    <a href={import.meta.env.VITE_GITHUB} target="_blank">
+                                        <FaGithub className={styles.icon}/>
+                                    </a>
+                                </p>
+                            </div>
+                     </div>
                 </div>
                 <section className={styles.about1}>
                     <h2>About Me</h2>

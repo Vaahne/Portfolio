@@ -8,11 +8,13 @@ import Experience from './pages/Experience/Experience'
 import Education from './pages/Education/Education'
 import Skills from './pages/Skills/Skills'
 import Certificate from './pages/Certificates/Certificate'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 function App() {
 
   return (
    <>
+    <ScrollToTop/>
     <NavBar/>
     <div className='mainContent'>
     <Routes>
