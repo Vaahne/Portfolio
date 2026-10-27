@@ -1,50 +1,99 @@
-.experience{
-    margin:auto;
-    padding: 1rem;
-    background-color: #f9f9fc;
-    border-radius: 12px;
-    max-width: 800px;
+.experience {
+    /* Reserve space for the fixed desktop navbar */
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 2.5rem;
+    background-color: #F3F5F9;
 }
+/* Page heading */
 .experience h3 {
-  font-size: 1.6rem;
-  margin-bottom: 1.5rem;
-  color: #333;
-  text-align: center;
+    max-width: 850px;
+    margin: 0 auto 1.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid #A78BFA;
+    color: #111827;
+    font-size: 1.8rem;
+    text-align: left;
 }
-
+/* Each experience card */
 .experience > div {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-left: 4px solid #00bcd4;
-  margin-bottom: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
+    max-width: 850px;
+    box-sizing: border-box;
+    margin: 0 auto 1.5rem;
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-left: 4px solid #8B5CF6;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(17, 24, 39, 0.06);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
-
 .experience > div:hover {
-  transform: translateY(-4px);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(17, 24, 39, 0.1);
 }
-
+/* Company and date */
 .experience h4 {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  color: #222;
-}
-
-.experience p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
-}
-h4{
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin: 0 0 0.85rem;
+    color: #1F2937;
+    font-size: 1.15rem;
+    line-height: 1.5;
 }
-
-@media (max-width:700px){
-  .experience{
-    margin-top: 4rem;
-    margin-left:auto;
-  }
+.experience h4 span {
+    flex-shrink: 0;
+    color: #6D28D9;
+    font-size: 0.95rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.experience p {
+    margin: 0;
+    color: #4B5563;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+/* Smaller desktop and tablet windows */
+@media (max-width: 900px) and (min-width: 701px) {
+    .experience {
+        padding: 1.5rem;
+    }
+    .experience > div {
+        padding: 1.25rem;
+    }
+}
+/* Match the navbar's mobile breakpoint */
+@media (max-width: 700px) {
+    .experience {
+        margin-left: 0;
+        width: 100%;
+        padding: 5.5rem 1rem 2rem;
+    }
+    .experience h3 {
+        font-size: 1.6rem;
+    }
+    .experience > div {
+        padding: 1.1rem;
+    }
+    .experience h4 {
+        font-size: 1.05rem;
+    }
+    .experience p {
+        font-size: 0.95rem;
+        line-height: 1.75;
+    }
+}
+@media (max-width: 400px) {
+    .experience {
+        padding: 5.5rem 0.75rem 1.5rem;
+    }
+    .experience > div {
+        padding: 1rem;
+    }
 }

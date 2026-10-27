@@ -1,115 +1,236 @@
+
+/* Main page */
 .aboutContainer {
-  display: flex;
-  justify-content: center;
-  background-color: #f9f9fc;
-  padding: 6rem 2rem 2rem; 
-
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    margin-left: 240px;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    background: #F3F5F9;
 }
 
+/* Main card */
 .about {
-  display: flex;
-  flex-direction: column;
-  max-width: 900px;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  padding: 1rem;
-  gap: 2rem;
-}
-.profileSection{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-.profilePic {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #ddd;
-  align-self: center;
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    align-items: start;
+    gap: 2rem;
+    max-width: 1050px;
+    width: 100%;
+    height: fit-content;
+    padding: 2rem;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(17, 24, 39, 0.07);
 }
 
+/* Profile area */
+.profileSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    min-width: 0;
+}
+
+/* Profile photo */
+.profilePic {
+    width: 170px;
+    height: 170px;
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid #E9E3FF;
+    box-shadow: 0 4px 16px rgba(17, 24, 39, 0.12);
+}
+
+/* Contact details */
 .details {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
 }
 
 .box {
-  background-color: #eae5e5;
-  padding: 1rem 1.25rem;
-  border-radius: 10px;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  width: 100%;
-  max-width: 300px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.25rem;
+    background: #F8FAFC;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
 }
 
+.box p {
+    margin: 0;
+    color: #4B5563;
+}
 
+.box strong {
+    display: block;
+    margin-bottom: 0.1rem;
+    color: #111827;
+    font-size: 0.85rem;
+}
+
+/* Social media links */
 .iconParent {
-  margin-top: 0.5rem;
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem !important;
+}
+
+.iconParent a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    background: #EDE9FE;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
 }
 
 .icon {
-  font-size: 1.5rem;
-  color: #333;
-  transition: color 0.3s ease;
+    font-size: 1.4rem;
+    color: #3730A3;
+    transition: color 0.2s ease;
 }
 
-.icon:hover {
-  color: #0077b5; 
+.iconParent a:hover {
+    background: #111827;
+    transform: translateY(-2px);
 }
 
+.iconParent a:hover .icon {
+    color: #FFFFFF;
+}
+
+.iconParent a:focus-visible {
+    outline: 3px solid #8B5CF6;
+    outline-offset: 3px;
+}
+
+/* About content */
 .about1 {
-  background-color: #eae5e5;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  flex: 1;
+    min-width: 0;
+    padding: 1rem 0.5rem;
 }
 
 .about1 h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  color: #222;
-  border-bottom: 2px solid #00bcd4;
-  padding-bottom: 0.5rem;
+    margin: 0 0 1.5rem;
+    padding-bottom: 0.75rem;
+    color: #111827;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    border-bottom: 3px solid #A78BFA;
 }
 
 .about1 p {
-  font-size: 1rem;
-  line-height: 1.8;
-  margin-bottom: 1rem;
-  color: #444;
+    margin: 0 0 1.25rem;
+    color: #4B5563;
+    font-size: 1rem;
+    line-height: 1.9;
 }
 
-/* Responsive layout */
+.about1 strong {
+    color: #312E81;
+    font-weight: 700;
+}
+
+/* Tablet: preserve sidebar space while reducing card size */
+@media (max-width: 900px) and (min-width: 701px) {
+    .aboutContainer {
+        padding: 1.5rem;
+    }
+
+    .about {
+        grid-template-columns: 220px minmax(0, 1fr);
+        gap: 1.25rem;
+        padding: 1.25rem;
+    }
+
+    .profilePic {
+        width: 140px;
+        height: 140px;
+    }
+
+    .about1 {
+        padding: 0.5rem 0;
+    }
+
+    .about1 h2 {
+        font-size: 1.7rem;
+    }
+}
+
+/* Mobile: match the navbar breakpoint of 700px */
 @media (max-width: 700px) {
-  .aboutContainer{
-    padding-top: 5rem ;
-  }
-  .about {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    .aboutContainer {
+        margin-left: 0;
+        width: 100%;
+        padding: 5.5rem 1rem 2rem;
+    }
 
-  .profilePic {
-    margin-right: 2rem;
-  }
+    .about {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
 
-  .details {
-    flex: 1;
-  }
+    .profileSection {
+        max-width: 360px;
+        width: 100%;
+        margin: 0 auto;
+    }
 
-  .about1 {
-    flex: 2;
-  }
+    .profilePic {
+        width: 145px;
+        height: 145px;
+    }
+
+    .about1 {
+        padding: 0.5rem 0;
+    }
+
+    .about1 h2 {
+        font-size: 1.7rem;
+    }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+    .aboutContainer {
+        padding: 5.5rem 0.75rem 1.5rem;
+    }
+
+    .about {
+        padding: 1rem;
+        border-radius: 12px;
+    }
+
+    .box {
+        padding: 1rem;
+    }
+
+    .about1 p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
 }
