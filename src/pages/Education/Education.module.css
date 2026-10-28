@@ -88,7 +88,7 @@
 /* Smaller desktop and tablet windows */
 @media (max-width: 900px) and (min-width: 701px) {
     .education {
-        padding: 1.5rem;
+        padding: e;
     }
 
     .education > div {
@@ -101,7 +101,7 @@
     .education {
         margin-left: 0;
         width: 100%;
-        padding: 5.5rem 1rem 2rem;
+        padding: 7rem 1rem 2rem;
         gap: 1.25rem;
     }
 
@@ -125,7 +125,7 @@
 
 @media (max-width: 400px) {
     .education {
-        padding: 5.5rem 0.75rem 1.5rem;
+        padding: 7rem 1rem 2rem;
     }
 
     .education > div {

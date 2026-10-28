@@ -7,7 +7,7 @@
     /* Leave room for the fixed desktop navbar */
     margin-left: 240px;
     width: calc(100% - 240px);
-    padding: 2rem;
+    padding-top: 7rem;
     box-sizing: border-box;
 
     background-color: #F3F5F9;
@@ -134,7 +134,7 @@
 
 @media (max-width: 900px) and (min-width: 701px) {
     .projects {
-        padding: 1.25rem;
+        padding: 7rem 1rem 2rem;
         gap: 1rem;
     }
 
@@ -148,7 +148,7 @@
     .projects {
         margin-left: 0;
         width: 100%;
-        padding: 5.5rem 1rem 2rem;
+        padding: 9rem 1rem 2rem;
         grid-template-columns: repeat(
             auto-fit,
             minmax(min(100%, 280px), 1fr)
@@ -167,7 +167,7 @@
 
 @media (max-width: 400px) {
     .projects {
-        padding: 5.5rem 0.75rem 1.5rem;
+        padding: 7rem 1rem 2rem;
     }
 
     .project {

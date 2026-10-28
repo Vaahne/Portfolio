@@ -4,7 +4,7 @@
     width: calc(100% - 240px);
     min-height: 100vh;
     margin-left: 240px;
-    padding: 3rem 2.5rem;
+    padding: 7rem 2.5rem;
     box-sizing: border-box;
     background-color: #F3F5F9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -149,7 +149,7 @@
 /* Tablet layout */
 @media (max-width: 900px) and (min-width: 701px) {
     .contact {
-        padding: 2rem 1.5rem;
+        padding: 7rem 1rem 2rem;
     }
 
     .contact h3 {
@@ -166,7 +166,7 @@
     .contact {
         width: 100%;
         margin-left: 0;
-        padding: 5.5rem 1rem 2rem;
+        padding: 8rem 1rem 2rem;
         justify-content: flex-start;
     }
 
@@ -190,7 +190,7 @@
 /* Small phones */
 @media (max-width: 400px) {
     .contact {
-        padding: 5.5rem 0.75rem 1.5rem;
+        padding: 9rem 1rem 2rem;
     }
 
     .contact h3 {

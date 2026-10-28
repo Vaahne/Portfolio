@@ -26,7 +26,7 @@
     gap: 1rem;
     max-width: 900px;
     margin: 0 auto;
-    padding: 0;
+    padding: 2rem;
     list-style: none;
 }
 
@@ -83,7 +83,7 @@
 /* Smaller desktop and tablet windows */
 @media (max-width: 900px) and (min-width: 701px) {
     .certifications {
-        padding: 1.5rem;
+        padding: 8rem 1rem 2rem;
     }
 
     .certificates li {
@@ -96,7 +96,7 @@
     .certifications {
         margin-left: 0;
         width: 100%;
-        padding: 5.5rem 1rem 2rem;
+        padding: 8rem 1rem 2rem;
     }
 
     .certifications h2 {
@@ -118,7 +118,7 @@
 
 @media (max-width: 400px) {
     .certifications {
-        padding: 5.5rem 0.75rem 1.5rem;
+        padding: 8rem 0.75rem 1.5rem;
     }
 
     .certificates li {

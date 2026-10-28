@@ -123,7 +123,7 @@
 /* Smaller desktop and tablet windows */
 @media (max-width: 900px) and (min-width: 701px) {
     .skills {
-        padding: 1.5rem;
+        padding: 8rem 1rem 2rem;
     }
 
     .prog {
@@ -140,7 +140,7 @@
     .skills {
         margin-left: 0;
         width: 100%;
-        padding: 5.5rem 1rem 2rem;
+        padding: 8rem 1rem 2rem;
     }
 
     .prog {
@@ -151,7 +151,7 @@
 
 @media (max-width: 400px) {
     .skills {
-        padding: 5.5rem 0.75rem 1.5rem;
+        padding: 8rem 0.75rem 1.5rem;
     }
 
     .skillItem {
